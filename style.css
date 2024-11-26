@@ -1,0 +1,316 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and overall layout */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #00bfae;
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg?cs=srgb&dl=action-athlete-barbell-841130.jpg&fm=jpg') no-repeat center center/cover;
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cta-btn {
+    background-color: #00bfae;
+    padding: 15px 30px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #008f74;
+}
+
+/* Services Section */
+.services {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.service-card {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    height: 175px;
+    width: 450px;
+}
+
+.service-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 1.1rem;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 50px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .cta-btn {
+        font-size: 1rem;
+    }
+
+    .services {
+        padding: 30px 20px;
+    }
+
+    .service-card {
+        margin: 10px 0;
+    }
+
+    .service-card h3 {
+        font-size: 1.6rem;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .cta-btn {
+        font-size: 0.9rem;
+        padding: 12px 25px;
+    }
+
+    .services h2 {
+        font-size: 2rem;
+    }
+}
+
+.servicessection {
+    display: flex;
+    /* flex: 1; */
+}
+
+/* form */
+
+
+/* body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f9;
+} */
+
+.contact-form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin-left: 1000px;
+}
+
+.contact-form h2 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: #333;
+}
+
+.contact-form label {
+    font-size: 14px;
+    color: #555;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    background: #007BFF;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background: #0056b3;
+}
+
+.form-bg{
+    background-image: url(gym.jpg);
+    background-position: center;
+    background-repeat:no-repeat ;
+    background-size:cover ;
+    padding: 40px;
+}
+
+/* body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    } */
+.footer {
+    background: url('gym-background.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-overlay {
+    background: rgba(0, 0, 0, 0.6);
+    /* Adds a dark overlay for better readability */
+    padding: 20px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.footer a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer .social-icons {
+    margin-top: 10px;
+}
+
+.footer .social-icons a {
+    margin: 0 10px;
+    font-size: 20px;
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+.footer .social-icons a:hover {
+    color: #fff;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #ccc;
+}
+
